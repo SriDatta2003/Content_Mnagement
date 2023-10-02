@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Content Management Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Content Management Tool</h1>
+        <div id="addForm">
+            <h2>Add Article</h2>
+            <form>
+                <label for="title" style="font-size: 40px; color:red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Title:</label>
+                <input type="text" id="title" required style="font-size: 40px;">
+                <label for="content" style="font-size: 40px; color:red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Content:</label><br>
+                <textarea id="content" required style="font-size: 16px;" rows="1" cols="20"></textarea><br><br>
+
+                <div class="options">
+                    <button id="addImage" class="button-52" >Add Image</button>
+                    <button id="addVideo" class="button-52">Add Video</button>
+                    <button id="addImageUrl" class="button-52">Add Image by URL</button>
+                    <button id="addVideoUrl" class="button-52">Add Video by URL</button>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="button-52">Add</button>
+                </div>
+            </form>
+        </div>
+        <div id="articleTable">
+            <h2>Articles</h2>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
+            <div id="articleContent"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
